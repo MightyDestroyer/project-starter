@@ -14,8 +14,9 @@ desktop.ini
 .env.*
 !.env.example
 
-# Cursor
-.cursor/
+# Cursor (rules werden getrackt)
+.cursor/*
+!.cursor/rules/
 
 # Node (entfernen falls nicht relevant)
 node_modules/
