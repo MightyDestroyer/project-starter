@@ -2,14 +2,23 @@
 
 [Kurzbeschreibung — was macht dieses Projekt?]
 
+## Quick Links
+
+| Service | URL |
+|---------|-----|
+| GitHub | [Repo-URL] |
+| Governance Wiki | [mightydestroyer.github.io/governance](https://mightydestroyer.github.io/governance/) |
+| Governance Repo | [MightyDestroyer/governance](https://github.com/MightyDestroyer/governance) |
+
+<!-- Lokale Services (falls zutreffend): -->
+<!-- | Service | http://localhost:PORT | -->
+
 ## Setup
 
 ```bash
-# Repository klonen
 git clone <repo-url>
 cd [projektname]
 
-# Environment konfigurieren
 cp .env.example .env
 # .env mit eigenen Werten fuellen
 ```
@@ -20,13 +29,12 @@ cp .env.example .env
 
 ## Governance
 
-Dieses Projekt folgt den MightyDestroyer Governance-Prinzipien.  
-Siehe: [MightyDestroyer/Governance](https://github.com/MightyDestroyer/Governance)  
-Kernprinzipien: [standards/principles.md](https://github.com/MightyDestroyer/Governance/blob/main/standards/principles.md)
+Dieses Projekt folgt den MightyDestroyer Governance-Prinzipien.
+Siehe: [MightyDestroyer/governance](https://github.com/MightyDestroyer/governance)
 
 ## Dokumentation
 
-- [CLAUDE.md](CLAUDE.md) — Agenten-Anweisungen
+- [CLAUDE.md](CLAUDE.md) — Projekt-Kontext und Agenten-Anweisungen
 - [Project Bible](docs/project-bible.md) — Sprint-Protokoll und Entscheidungen
 - [ADRs](docs/adrs/) — Architektur-Entscheidungen
 

@@ -7,76 +7,76 @@
 - **Stack:** [z. B. TypeScript, Next.js, PostgreSQL]
 - **Repo:** [GitHub-URL]
 
+## Quick Links
+
+| Service | URL |
+|---------|-----|
+| GitHub | [Repo-URL] |
+| Governance Wiki | https://mightydestroyer.github.io/governance/ |
+| Governance Repo | https://github.com/MightyDestroyer/governance |
+
+<!-- Lokale Services (falls zutreffend): -->
+<!-- | Grafana | http://localhost:3000 | -->
+<!-- | Prometheus | http://localhost:9090 | -->
+<!-- | Health Check | http://localhost:8080/healthz | -->
+
 ## Governance
 
-Dieses Projekt folgt den MightyDestroyer Governance-Prinzipien.  
-**Governance-Repo:** [MightyDestroyer/Governance](https://github.com/MightyDestroyer/Governance)  
-**Kernprinzipien:** [standards/principles.md](https://github.com/MightyDestroyer/Governance/blob/main/standards/principles.md)
+Dieses Projekt folgt den MightyDestroyer Governance-Prinzipien.
 
-### Verbindliche Standards
+- [Kernprinzipien](https://github.com/MightyDestroyer/governance/blob/main/standards/principles.md) — 11 Prinzipien, alle verbindlich.
+- [AI Guardrails](https://github.com/MightyDestroyer/governance/blob/main/standards/ai-guardrails.md)
+- [Security Guidelines](https://github.com/MightyDestroyer/governance/blob/main/standards/security-guidelines.md)
+- [Coding Principles](https://github.com/MightyDestroyer/governance/blob/main/standards/coding-principles.md)
 
-- [Kernprinzipien](https://github.com/MightyDestroyer/Governance/blob/main/standards/principles.md) — 11 Prinzipien, alle verbindlich.
-- [AI Guardrails](https://github.com/MightyDestroyer/Governance/blob/main/standards/ai-guardrails.md) — Regeln für KI-Agenten.
-- [Security Guidelines](https://github.com/MightyDestroyer/Governance/blob/main/standards/security-guidelines.md) — Sicherheitsrichtlinien.
-- [Coding Principles](https://github.com/MightyDestroyer/Governance/blob/main/standards/coding-principles.md) — Coding-Standards.
-- [Compliance by Design](https://github.com/MightyDestroyer/Governance/blob/main/standards/compliance-by-design.md) — Compliance-Anforderungen.
+Operative Regeln (Naming, Commits, Eskalation) werden durch Cursor Rules in `.cursor/rules/` durchgesetzt.
 
-## Anweisungen für KI-Agenten
+## Architektur
 
-### Allgemein
+<!-- Kurze Beschreibung der Projektarchitektur: -->
+<!-- - Welche Services/Module gibt es? -->
+<!-- - Wie kommunizieren sie? -->
+<!-- - Welche Datenbanken/Stores werden genutzt? -->
 
-- Lies diese Datei vollständig, bevor du mit einer Aufgabe beginnst.
-- Halte dich an die Governance-Prinzipien — insbesondere: kein Auto-Commit, kein Auto-Deploy, keine Architekturentscheidungen ohne Rücksprache.
-- Änderungen nur innerhalb des definierten Scope (siehe Aufgaben-Template).
-- Bei Unsicherheit: Stopp und Rückfrage — keine Annahmen.
+## Build & Run
 
-### Naming Convention
+```bash
+make dev       # Entwicklung
+make build     # Build
+make test      # Tests
+make lint      # Lint
+```
 
-- **Dateien/Ordner:** lowercase, kebab-case.
-- **Code:** Siehe Coding Principles (camelCase für JS/TS, snake_case für Python etc.).
-- **Branches:** `feature/beschreibung`, `fix/beschreibung`, `docs/beschreibung`.
-
-### Commit-Regeln
-
-- Klare, aussagekräftige Commit-Messages.
-- Kein Commit ohne Doku-Update (README, ADRs, MEMORY.md falls betroffen).
-- Kein Commit mit Secrets, hardcodierten Werten oder TODO-ohne-Ticket.
-
-### Kontext-Dateien
+## Kontext-Dateien
 
 | Datei | Zweck | Pflicht? |
 |-------|-------|----------|
-| `CLAUDE.md` | Diese Datei — Agenten-Anweisungen | Ja |
-| `README.md` | Projektübersicht, Setup | Ja |
-| `MEMORY.md` | Persistenter Kontext über Sessions | Empfohlen |
-| `TASKS.md` | Aktuelle Aufgaben, Sprint-Status | Optional |
+| `CLAUDE.md` | Diese Datei — Projekt-Kontext | Ja |
+| `README.md` | Projektueberblick, Setup | Ja |
+| `MEMORY.md` | Persistenter Kontext ueber Sessions | Empfohlen |
 | `docs/project-bible.md` | Sprint-Protokoll, ADRs, Entscheidungen | Empfohlen |
 
-### Session-Start
+## Session-Workflow
+
+### Start
 
 1. CLAUDE.md lesen (diese Datei).
 2. MEMORY.md lesen (falls vorhanden).
-3. Übergabe-Dokument der letzten Session lesen (falls vorhanden).
-4. Scope der aktuellen Aufgabe klären.
+3. Uebergabe-Dokument der letzten Session lesen (falls vorhanden).
+4. Scope der aktuellen Aufgabe klaeren.
 
-### Session-Ende
+### Ende
 
 1. Doku aktualisieren (README, MEMORY.md, ADRs).
-2. Übergabe-Dokument erstellen (falls relevanter Kontext).
-3. TASKS.md aktualisieren (falls vorhanden).
+2. Uebergabe-Dokument erstellen (falls relevanter Kontext).
 
 ## Projektspezifische Regeln
 
-<!-- Hier projektspezifische Anweisungen einfügen, z. B.: -->
-<!-- - Design-System: [Link oder Beschreibung] -->
-<!-- - API-Konventionen: [REST, GraphQL, Naming] -->
-<!-- - Deployment-Prozess: [Beschreibung] -->
-<!-- - Besondere Abhängigkeiten oder Constraints -->
+<!-- Hier projektspezifische Anweisungen einfuegen -->
 
 ## ADRs
 
-Architektur-Entscheidungen werden unter `docs/adrs/` dokumentiert.  
-Template: [ADR-Template](https://github.com/MightyDestroyer/Governance/blob/main/standards/architecture-patterns.md#adr-template)
+Architektur-Entscheidungen werden unter `docs/adrs/` dokumentiert.
 
 ---
 

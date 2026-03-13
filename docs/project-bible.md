@@ -6,7 +6,7 @@
 - **Ziel:** [Was soll das Projekt erreichen?]
 - **Stack:** [z. B. TypeScript, Next.js, PostgreSQL, Docker]
 - **Start:** [Datum]
-- **Governance:** [MightyDestroyer/Governance](https://github.com/MightyDestroyer/Governance)
+- **Governance:** [MightyDestroyer/governance](https://github.com/MightyDestroyer/governance)
 
 ---
 

@@ -1,0 +1,45 @@
+---
+description: ADR-Konventionen — Architektur-Entscheidungen dokumentieren nach MightyDestroyer Governance
+globs: "**/docs/adrs/**"
+alwaysApply: false
+---
+
+# ADR-Konventionen
+
+## Dateiname
+
+`adr-NNN-kurztitel.md` — dreistellig, kebab-case. Beispiel: `adr-003-data-lineage-openlineage-marquez.md`.
+
+## Pflichtabschnitte
+
+Jeder ADR muss enthalten: Status, Datum, Entscheider, Kontext, Entscheidung, Alternativen, Konsequenzen.
+
+## Status-Werte
+
+`Vorgeschlagen` | `Akzeptiert` | `Abgelehnt` | `Ersetzt durch ADR-XXX`
+
+## Template
+
+```markdown
+# ADR-NNN: Titel
+
+**Status:** Akzeptiert
+**Datum:** YYYY-MM-DD
+**Entscheider:** [Name/Rolle]
+
+## Kontext
+Was ist die Ausgangslage? Welches Problem wird geloest?
+
+## Entscheidung
+Was wurde entschieden und warum?
+
+## Alternativen
+Welche Alternativen wurden betrachtet? Warum verworfen?
+
+## Konsequenzen
+Positive und negative Auswirkungen. Betroffene Governance-Prinzipien.
+```
+
+## Registrierung
+
+Neue ADRs muessen in `governance.yaml` (Abschnitt `adrs:`) registriert werden.
