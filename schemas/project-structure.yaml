@@ -1,0 +1,35 @@
+name: project-starter-structure
+version: "1.0.0"
+description: Schema describing the standard project structure created by this template
+
+required_files:
+  - README.md
+  - CLAUDE.md
+  - .gitignore
+  - Makefile
+  - docs/project-bible.md
+
+required_directories:
+  - docs/
+  - docs/adrs/
+  - .github/
+
+optional_files:
+  - MEMORY.md
+  - .env.example
+  - .github/pull-request-template.md
+  - .cursor/rules/governance.mdc
+
+stack_specific:
+  go:
+    - go.mod
+    - cmd/main.go
+    - .golangci.yml
+  python:
+    - pyproject.toml
+    - requirements.txt
+  node:
+    - package.json
+    - tsconfig.json
+    - .eslintrc.json
+    - .prettierrc

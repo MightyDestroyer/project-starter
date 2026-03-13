@@ -9,10 +9,12 @@ desktop.ini
 *.swp
 *.swo
 
-# Environment
+# Environment & Secrets
 .env
 .env.*
 !.env.example
+*.key
+*.pem
 
 # Cursor (rules werden getrackt)
 .cursor/*
